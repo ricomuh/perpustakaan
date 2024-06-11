@@ -1,0 +1,24 @@
+CREATE DATABASE Perpustakaan;
+
+USE Perpustakaan;
+
+CREATE TABLE Buku (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    judul VARCHAR(255) NOT NULL,
+    penulis VARCHAR(255) NOT NULL,
+    tahun_terbit INT NOT NULL
+);
+
+CREATE TABLE Pustakawan (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nama VARCHAR(255) NOT NULL,
+    alamat VARCHAR(255) NOT NULL,
+    telepon VARCHAR(15) NOT NULL
+);
+
+CREATE TABLE Anggota (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nama VARCHAR(255) NOT NULL,
+    alamat VARCHAR(255) NOT NULL,
+    telepon VARCHAR(15) NOT NULL
+);
